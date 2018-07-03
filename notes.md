@@ -1,17 +1,13 @@
 # The Dev Workflow
 
-- Approach as a puzzle
-- Break your problem down into small pieces
-- look up for syntax (MDN, stack overflow)
-- test what you've found (in the node repl or in your code, use lots of `console.log`)
-- What over How
-  - What is happening?
-  - What did you want to have happen?
-- always try to break your own code (entering unexpected inputs, users rarely behave)
-
-we want to write functions that make sense,  so
-   addTwoNumbersTogether(3) //bad
-doesn't make sense
+* Approach as a puzzle
+* Break your problem down into small pieces
+* look up for syntax (MDN, stack overflow)
+* test what you've found (in the node repl or in your code, use lots of console.log)
+* What over How:
+  - What is happening?
+  - What did you want to have happen?
+* always try to break your own code (entering unexpected inputs, as users rarely behave)
 
 Your code lies to you. The outcome tells you the truth. When you have an error, read the error. Use diagnostic tools a lot, like console.log
 
@@ -25,16 +21,16 @@ Your code lies to you. The outcome tells you the truth. When you have an error, 
 
 ## What we did
 We worked slowly through each step of creating the problem.
-1. how to get the inputs from the terminal (process.argv)
-2. how to remove the first two elements (.slice(2))
-3. how to turn the elements from strings to numbers (Number(element))
-4. how to how to check if the result is a real number or NaN (isNaN)
-5. adding the numbers together
-6. returning the numbers
-7. benchmarking (console.log and Date.now(), to test which type of loop was more efficient)
-8. refactoring (splitting into functions, make dry)
+* how to get the inputs from the terminal (process.argv)
+* how to remove the first two elements (.slice(2))
+* how to turn the elements from strings to numbers (Number(element))
+* how to how to check if the result is whole number (number % 1)
+* adding the numbers together
+* returning the numbers
+* benchmarking (console.log and Date.now(), to test which type of loop was more efficient)
+* refactoring (splitting into functions, make dry, add comments)
 
-For each problem you come across, search for the answer, test out what is suggested, and test it in your own code.
+For each problem you come across, search for the answer, test out what is suggested, and test it in your own code in small pieces. Make sure you test regularly after adding or changing anything, if you make a lot of changes all at once you might not know what is causing the error.
 
 Good luck in the rest of week 1!
 
